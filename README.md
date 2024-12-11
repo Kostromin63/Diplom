@@ -143,6 +143,7 @@ MNIST и нейронную сеть для ее решения. База дан
   
 Epoch
 а) Зависимость точности от количества эпох б) зависимость времени от количества эпох
+
 Рис. 2. Результаты работы нейронной сети, построенной с помощью библиотеки SciKit Learn
 
 Первый график показывает зависимость точности от количества эпох. Второй график показывает зависимость времени от количества эпох.
@@ -150,44 +151,29 @@ Epoch
 На диаграмме (рис. 7) показаны значения времени и точности для рассматриваемых библиотек. Все значения нормированы.
  
  
+![img_3.png](img_3.png)  ![img_4.png](img_4.png)
 
 Epoch	Epoch
-(a) The dependence of accuracy	(b) The dependence of training time
-on the number of epochs	on the number of epochs
-Figure 4. Results of a neural network built with the help of the PyTorch library
- 
-Epoch
-(a) The dependence of accuracy on the number of epochs
+(a) Зависимость точности от количества эпох	              (б) Зависимость времени от количества эпох
 
-Figure 5. Results of a neural network built with the help of the TensorFlow library
- 
-Epoch
-(b) The dependence of training time on the number of epochs
 
-Figure 6. Results of a neural network built with the help of the Theano library 
+Рис. 3. Результаты работы нейросети, построенной с помощью бибилиотеки Py Torch
 
+![img_5.png](img_5.png)  ![img_6.png](img_6.png)
+
+а) Зависимость точности от количества эпох     (б) Зависимость времени от количества эпох
+
+Рис. 4. Результаты работы нейросети, построенной с помощью бибилиотеки TensorFlow 
  
 Первый график показывает зависимость времени от количества эпох. Второй график показывает зависимость точности от количества эпох.
 Ниже представлена сводная таблица результатов обучения нейронной сети на 50 эпохах для разных библиотек (см. Таблицу 1).
 На диаграмме (рис. 7) показаны значения времени и точности для рассматриваемых библиотек. Все значения нормированы.
 
+![img_7.png](img_7.png)
 
- 
+![img_8.png](img_8.png)
 
-Epoch	Epoch
-(a) The dependence of accuracy	(b) The dependence of training time
-on the number of epochs	on the number of epochs
-Figure 4. Results of a neural network built with the help of the PyTorch library
- 
-Epoch
-(a) The dependence of accuracy on the number of epochs
 
-Figure 5. Results of a neural network built with the help of the TensorFlow library
- 
-Epoch
-(b) The dependence of training time on the number of epochs
-
-Figure 6. Results of a neural network built with the help of the Theano library
 
 Table 1
 Результат сравнительного анализа библиотек машинного обучения
