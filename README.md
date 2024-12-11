@@ -45,7 +45,7 @@ Scikit-learn построен на основе научных вычислит�
 машинного обучения, что делает его удобным для быстрого прототипирования и экспериментов. Вот несколько примеров использования scikit-learn:
 
 
-<1.2. TensorFlow>
+**1.2. TensorFlow**
 
   Одной из главных альтернатив scikit-learn является TensorFlow. TensorFlow - это мощная библиотека глубокого обучения, разработанная Google. В отличие от scikit-learn, 
 которая фокусируется на традиционных алгоритмах машинного обучения, TensorFlow специализируется на построении и обучении нейронных сетей. Он предоставляет гибкие
@@ -91,7 +91,7 @@ tf.Module — это класс для управления вашими объ�
 Тренировочные циклы
 Теперь соберите все это вместе, чтобы построить базовую модель и обучить ее с нуля.
 
-<1.3. PyTorch?
+**1.3. PyTorch**
 
    Другой популярной библиотекой является PyTorch, разработанная Facebook. Как и TensorFlow, PyTorch ориентирован на глубокое обучение и предоставляет динамические
 вычислительные графы, что делает его удобным для исследований и экспериментов. PyTorch имеет более "питонический" интерфейс по сравнению с TensorFlow и обеспечивает 
@@ -115,9 +115,9 @@ tf.Module — это класс для управления вашими объ�
 Он нацелен на быстрое прототипирование и удобство использования. Keras предоставляет простой интерфейс для построения нейронных сетей и включает множество предварительно
 обученных моделей. Однако Keras не так гибок, как низкоуровневые библиотеки, такие как TensorFlow или PyTorch, и может быть ограничен в своих возможностях настройки.
 
-<2     Сравнительный анализ библиотек машинного обучения>
+**2     Сравнительный анализ библиотек машинного обучения** [статья первоисточник](https://repository.rudn.ru/ru/records/article/record/71001/)
 
-<2.1  Описание и архитектура нейронной сети.>
+**2.1  Описание и архитектура нейронной сети.**
 
   Для сравнительного анализа библиотек глубокого машинного обучения выберем задачу распознавания рукописных цифр из базы данных 
 MNIST и нейронную сеть для ее решения. База данных MNIST содержится в файле CSV, в котором записаны цифры, разделенные запятыми. В файле CSV первое значение — это маркер,
@@ -133,7 +133,7 @@ MNIST и нейронную сеть для ее решения. База дан
 
 Рис.1 Многослойный персептрон
 
-<2.2 Анализ работы библиотек>	
+**2.2 Анализ работы библиотек**	
   Программная реализация нейронной сети с использованием различных библиотек. К сожалению мне не удалось воспроизвести описанные ниже модели и повторить опыты с
 ними в полном объеме. По этому пункт второй я полностью процитирую из источника. Далее идет перевод статьи. С помощью каждой библиотеки из обзора выше мы построили
 модели перцептрона. Каждая нейронная сеть была обучена, а время обучения и точность измерялись для разного количества периодов обучения. Мы использовали эти измерения
@@ -209,9 +209,9 @@ Figure 7. The time and accuracy values
 точностью. Библиотека PyTorch показывает хороший результат по точности только при большом количестве эпох, но с ростом количества эпох время обучения сильно 
 увеличивается. Минимальная точность составила 98,07. Библиотеки Keras и Theano являются наиболее точными, их точность поддерживается на уровне 0,98.
 
-<3. Оценка удобства использования.>
+**3. Оценка удобства использования.**
 
-<3.1  Установка библиотек.>
+**3.1  Установка библиотек.**
   Установку бибилиотек лучше производить с сайтов поддержки библиотек:
 
   [ https://scikit-learn.org/1.5/install.html ]
@@ -234,9 +234,10 @@ Figure 7. The time and accuracy values
 
   Не смотря на то, что после установки у меня в PyCharm он подчеркнут красным и попадает в рязряд ошибок, работу свою выполняет.
 
-<3.2 Наличие встроенных классов и функций для решения типовых задач.>
+**3.2 Наличие встроенных классов и функций для решения типовых задач.**
 
-  Scikit-learn
+**3.2.1 Scikit-learn**
+
   также предоставляет инструменты для предобработки данных, такие как масштабирование признаков, кодирование категориальных переменных и заполнение 
   пропущенных значений. Кроме того, библиотека включает функции для оценки качества моделей, такие как кросс-валидация и метрики производительности.
   Благодаря своей простоте использования, гибкости и широкому набору алгоритмов, scikit-learn стал де-факто стандартной библиотекой для машинного обучения на Python.
@@ -257,9 +258,7 @@ clf.fit(X_train, y_train)
 accuracy = clf.score(X_test, y_test)
 print(f"Accuracy: {accuracy:.2f}")
 
-
 -Регрессия: Предсказание непрерывного значения на основе входных данных. Например, предсказание цен на жилье:
-
 
 from sklearn.linear_model import LinearRegression
 from sklearn.datasets import load_boston
@@ -274,9 +273,7 @@ reg.fit(X_train, y_train)
 r2_score = reg.score(X_test, y_test)
 print(f"R^2 score: {r2_score:.2f}")
 
-
 -Кластеризация: Группировка похожих объектов в кластеры. Например, сегментация клиентов на основе их поведения:
-
 
 from sklearn.cluster import KMeans
 from sklearn.datasets import make_blobs
@@ -289,7 +286,7 @@ kmeans.fit(X)
 labels = kmeans.labels_
 print(f"Cluster labels: {labels}")
 
-tensorflow
+**3.2.2 Tensor Flow**
 
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
@@ -314,6 +311,11 @@ model.compile(optimizer='adam',
 model.fit(x_train, y_train, epochs=5)
 model.evaluate(x_test, y_test)
 
+**3.2.3 Torch**
+
+-Пакет torch содержит структуры данных для многомерных тензоров и определяет математические операции над этими тензорами. Кроме того, он предоставляет 
+ множество утилит для эффективной сериализации тензоров и произвольных типов, а также другие полезные утилиты. У него есть аналог CUDA, который позволяет
+ запускать тензорные вычисления на графическом процессоре NVIDIA с вычислительной мощностью >= 3.0.
 
 
 
@@ -322,13 +324,14 @@ model.evaluate(x_test, y_test)
 
 
 
-4. Заключение
+**4. Заключение**
 На основе сравнения разных библиотек можно сделать ряд выводов. Почти все библиотеки, кроме PyTorch, показывают примерно одинаковое время обучения. В случае с PyTorch 
 более длительное время обучения можно объяснить поддержкой динамического вычислительного графа, что, по-видимому, влечет за собой дополнительные вычислительные 
-затраты. В свою очередь библиотека TensorFlow показала средний результат по точности, уступив PyTorch и Theano.
+затраты. В свою очередь библиотека TensorFlow показала средний результат по точности, уступив PyTorch.
 
 
 References
+[ https://repository.rudn.ru/ru/records/article/record/71001/ ]
 [1]	G. Van Rossum and F. L. Drake Jr, Python tutorial. Centrum voor Wiskunde en Informatica Amsterdam, The Netherlands, 1995.
 [2]	T. Kluyver et al., “Jupyter Notebooks — a publishing format for repro¬ducible computational workflows,” in Positioning and Power in Academic Publishing: Players, 
 Agents and Agendas, F. Loizides and B. Schmidt, Eds., IOS Press, 2016, pp. 87-90. doi: 10.3233/978-1-61499-649-1¬87.
@@ -339,20 +342,20 @@ doi: 10.1109/MCSE.2007.53.
 2, pp. 31-39, Mar. 2011. doi: 10.1109/MCSE. 2010.118.
 [6]	S. van der Walt, S. C. Colbert, and G. Varoquaux, “The NumPy array: a structure for efficient numerical computation,” Computing in Science Engineering, vol. 13, 
 no. 2, pp. 22-30, Mar. 2011. doi: 10.1109/MCSE. 2011.37.
-[7]	E. Jones, T. Oliphant, P. Peterson, et al. (2001-). SciPy: open source scientific tools for Python, [Online]. Available: http://www.scipy. org/.
+[7]	E. Jones, T. Oliphant, P. Peterson, et al. (2001-). SciPy: open source scientific tools for Python, [Online]. Available: [ http://www.scipy.org/. ]
 [8]	W. McKinney, “Data structures for statistical computing in Python,” in Proceedings of the 9th Python in Science Conference, S. van der Walt and J. Millman, Eds., 
 2010, pp. 51-56.
 [9]	Martin Abadi et al. (2015). TensorFlow: large-scale machine learning on heterogeneous systems. Software available from tensorflow.org, [Online].
-Available: http://tensorflow.org/.
+Available:] http://tensorflow.org/. ]
 [10]	(2019). TensorFlow official repository, [Online]. Available: https:// github.com/tensorflow/tensorflow.
 [11]	A. Paszke, S. Gross, S. Chintala, G. Chanan, E. Yang, Z. DeVito, Z. Lin, A. Desmaison, L. Antiga, and A. Lerer, 
 “Automatic differentiation in PyTorch,” in 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA, 2017.
-[12]	(2019). Torch official repository, [Online]. Available: https://github. com/torch/torch7.
+[12]	(2019). Torch official repository, [Online]. Available:] https://github.com/torch/torch7. ]
 [13]	Theano Development Team, “Theano: a Python framework for fast computation of mathematical expressions,” May 2016. eprint: arXiv: abs/1605.02688.
 [14]	F. Chollet. (2019). Keras, [Online]. Available: https://keras.io/.
 [15]	(2019). CNTC official repository, [Online]. Available: https://github. com/Microsoft/cntk.
 [16]	F. Pedregosa et al., “Scikit-learn: machine learning in Python,” Journal of Machine Learning Research, vol. 12, pp. 2825-2830, 2011.
-[17]	(2019). MNIST handwritten digit database, Yann LeCun, Corinna Cortes and Chris Burges, [Online]. Available: http://yann.lecun. com/exdb/mnist/.
+[17]	(2019). MNIST handwritten digit database, Yann LeCun, Corinna Cortes and Chris Burges, [Online]. Available: [ http://yann.lecun.com/exdb/mnist/. ]
 [18]	F. Rosenblatt, “The perceptron: a probabilistic model for information storage and organization in the brain,” Psychological review, vol. 65, no. 6, 1958.
 DOI: 10.1037/h0042519.
 [19]	X. Glorot, A. Bordes, and Y. Bengio, “Deep Sparse Rectifier Neural Networks,” in Proceedings of the Fourteenth International Conference on Artificial 
@@ -365,15 +368,15 @@ M. N. Gevorkyan, A. V. Demidova, T. S. Demidova, A. A. Sobolev, Review and compa
 Continuous Models and Applied Computational Science 27 (4) (2019) 305-315. DOI: 10.22363/2658-4670-2019-27-4-305-315.
 Information about the authors:
 Migran N. Gevorkyan — Candidate of Physical and Mathe¬matical Sciences, assistant professor of Department of Applied Probability and Informatics of Peoples’ 
-Friendship University of Russia (RUDN University) (e-mail: gevorkyan-mn@rudn.ru, phone: +7(495)9520250, ORCID: https://orcid.org/0000-0002-4834-4895, ResearcherID:
-E-9214-2016, Scopus Author ID: 57190004380)
+Friendship University of Russia (RUDN University) (e-mail: gevorkyan-mn@rudn.ru, phone: +7(495)9520250, ORCID: [ https://orcid.org/0000-0002-4834-4895, ResearcherID:
+E-9214-2016, Scopus Author ID: 57190004380) ]
 Anastasia V. Demidova — Candidate of Physical and Math¬ematical Sciences, assistant professor of Department of Applied Probability and Informatics of Peoples’
-Friendship University of Russia (RUDN University) (e-mail: demidova-av@rudn.ru, phone: +7(495)9520250, ORCID: https://orcid.org/0000-0003-1000-9650, ResearcherID:
-AAD-2214-2019, Scopus Author ID: 57191952809)
+Friendship University of Russia (RUDN University) (e-mail: demidova-av@rudn.ru, phone: +7(495)9520250, ORCID: [] https://orcid.org/0000-0003-1000-9650, ResearcherID:
+AAD-2214-2019, Scopus Author ID: 57191952809) ]
 Tatiana S. Demidova — student of Department of Applied Probability and Informatics of Peoples’ Friendship University of Russia (RUDN University) (e-mail: 
-1032152607@pfur.ru, phone: +7(495)9520250, ORCID: https://orcid.org/0000-0001-6076-1619, Scopus Author ID: 57210151914)
+1032152607@pfur.ru, phone: +7(495)9520250, ORCID: [ https://orcid.org/0000-0001-6076-1619, Scopus Author ID: 57210151914) ]
 Anton A. Sobolev — student of Department of Applied Probability and Informatics of Peoples’ Friendship University of Russia (RUDN University) (e-mail: 
-1032152618@pfur.ru, phone: +7(495)9520250, ORCID: https://orcid.org/0000-0003-1629-1378, Scopus Author ID: 57206139419)
+1032152618@pfur.ru, phone: +7(495)9520250, ORCID: [ https://orcid.org/0000-0003-1629-1378, Scopus Author ID: 57206139419) ]
 УДК 519.21;51-76
 DOI: 10.22363/2658-4670-2019-27-4-305-315
 
