@@ -233,9 +233,9 @@ Figure 7. The time and accuracy values
 
 3.1  Установка библиотек.
   Установку бибилиотек лучш производить с сайтов поддержки библиотек:
-  https://scikit-learn.org/1.5/install.html
-  https://www.tensorflow.org/install?hl=ru
-  https://pytorch.org/get-started/locally/
+  [ https://scikit-learn.org/1.5/install.html ]
+  [ https://www.tensorflow.org/install?hl=ru ]
+  [ https://pytorch.org/get-started/locally/ ]
   Там все подробно написано и даже команды для разных этапов установки можно скопировать и вставлять в консоль.
   Хотелось бы отдельно сказать о бибилиотеке keras.
   Keras — это API глубокого обучения, написанный на Python и способный работать поверх JAX , TensorFlow или PyTorch .
